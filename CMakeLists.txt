@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.31)
 project(gpu_stable_power CXX)
 
 if(MSVC)
-    add_compile_options(/Zi /MP)
+    add_compile_options(/Zi /MP /W4 /WX)
     add_link_options(/DEBUG)
 endif()
 
